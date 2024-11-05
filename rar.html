@@ -1,117 +1,69 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta author="Juliana Avril C. Daguro">
-            <title>Cat Figure</title>
-            <link rel="stylesheet" href="styles.css">
-            <style>
-                
-                span#a {
-                    color: purple;
-                }
-                #a {
-                    color: pink;
-                }
-                span {
-                    color: green;
-                }
-            </style>
-        </head>
-        <body>
-            <!--
-            <table>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                    <td style="border: 1px solid black">Data 2</td>
-                    <td style="border: 1px solid black">Data 3</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                    <td style="border: 1px solid black">Data 2</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                    <td style="border: 1px solid black">Data 2</td>
-                    <td style="border: 1px solid black">Data 3</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td style="border: 3px solid black">Data 1</td>
-                    <td style="border: 3px pink">Data 2</td>
-                </tr>
-                <tr>
-                    <td style="border: 3px purple">Data 1</td>
-                    <td style="border: 3px red">Data 2</td>
-                </tr>
-                <tr>
-                    <td style="border: 3px orange">Data 1</td>
-                    <td style="border: 3px blue">Data 2</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th style="border: 1px solid black">Header 1</th>
-                    <th style="border: 1px solid black">Header 2</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</th>
-                    <td style="border: 1px solid black">Data 2</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</th>
-                    <td style="border: 1px solid black">Data 2</th>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th style="border: 1px solid black; background: pink">Header 1</th>
-                    <th style="border: 1px solid black; background: pink">Header 2</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black; background: lightblue">Data 1</th>
-                    <td style="border: 1px solid black; background: lightblue">Data 2</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black; background: lightblue">Data 1</th>
-                    <td style="border: 1px solid black; background: lightblue">Data 2</th>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th style="border: 1px solid black; colspan: 2; align: center">Header 1</th>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                    <td style="border: 1px solid black">Data 2</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                    <td style="border: 1px solid black">Data 2</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th style="border: 1px solid black; scope: colgroup; colspan: 2; align: center">Header 1</th>
-                </tr>
-                <tr>
-                    <th style="border: 1px solid black; scope: rowgroup; rowspan: 3; align: center; background: pink">Header 1</th>
-                    <td style="border: 1px solid black">Data 1</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                </tr>
-                <tr>
-                    <td style="border: 1px solid black">Data 1</td>
-                </tr>
-            </table>
-            -->
-            <div>
-                <span classs="a" id="a">
-                    I am inside a span
-                </span>
-            </div>
-        </body>
-    </html>
+<html>
+	<head>
+		<style>
+			.sprite {
+				background: url('icon.png') no-repeat -182px -91px;
+				width: 50px;
+				height: 50px;
+			}
+			
+			.animate {
+				background: url('animate.jpg') no-repeat 0 0;
+				width: 97px;
+				height: 124px;
+				animation: varName 1s steps(4) infinite;
+			}
+			
+			@keyframes varName{
+				from{background-position-x:0px;}
+				to{background-position-x:-405px;}
+			}
+			
+			.animate2 {
+				background: url('pokemon.png') no-repeat 0 0;
+				width: 110px;
+				height: 150px;
+				animation: varName2 1s steps(4) infinite;
+			}
+			
+			@keyframes varName2{
+				from{background-position-x:0px;}
+				to{background-position-x:-535px;}
+			}
+			
+			.animate3 {
+				background: url('pokemon.png') no-repeat 0px -130px;
+				width: 110px;
+				height: 150px;
+				animation: varName3 1s steps(4) infinite;
+			}
+			
+			@keyframes varName3{
+				from{background-position-x:0px;}
+				to{background-position-x:-535px;}
+			}
+		</style>
+	</head>
+	<body>
+		<span>Part 1</span>
+        <div class="sprite"></div>
+		
+		<br><br>
+		
+		<span>Part 2</span>
+		<div class="animate"></div> 
+		
+		<br><br>
+		
+		<span>Part 3</span>
+		<div class="animate2"></div>
+		
+		<br><br>
+		
+		<span>Part 4</span>
+		<div class="animate3"></div>
+	</body>
+</html>
+
 
